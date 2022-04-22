@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace function_overriding
+{
+    public class Program
+    {
+        public virtual void showinfo()
+        {
+            Console.WriteLine("Base class method");
+        }
+    } 
+    class b:Program
+    {
+        public override void showinfo()
+        {
+            Console.WriteLine("Derived class method:-");
+
+        }
+    
+        static void Main(string[] args)
+        {
+        b b1 = new b();
+        b1.showinfo();
+        b1.showinfo();
+
+        }
+    }
+
+}
